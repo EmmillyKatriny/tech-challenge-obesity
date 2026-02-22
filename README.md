@@ -63,11 +63,6 @@ Gradient Boosting
 | Random Forest        | 97.63%   |
 | Gradient Boosting ⭐ | **98.34%** |
 
-Gradient Boosting: ████████████████████ 98%  
-
-Random Forest:     ██████████████████ 97%  
-
-Logistic Regression: ████████████ 90%  
 
 O modelo escolhido foi Gradient Boosting, por apresentar melhor desempenho.
 
@@ -111,17 +106,17 @@ Consumo de álcool × obesidade
 Acesse o dashboard aqui:
 
 # 7. Estrutura do Projeto
-tech-challenge-obesity/
+tech-challenge-obesity/  
 │
-├── data/
-│   └── obesity.csv
-│
-├── tech_challenge_obesity.ipynb
-├── app.py
-├── modelo_obesidade.pkl
-├── requirements.txt
-├── dashboard.pbix
-└── README.md
+├── data/  
+│   └── obesity.csv  
+│  
+├── tech_challenge_obesity.ipynb  
+├── app.py  
+├── modelo_obesidade.pkl  
+├── requirements.txt  
+├── dashboard.pbix  
+└── README.md  
 
 # 8. Vídeo de Apresentação
 
