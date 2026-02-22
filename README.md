@@ -1,15 +1,15 @@
-# tech-challenge-obesity
+## tech-challenge-obesity
 
-## Predição de Nível de Obesidade com Machine Learning
+# Predição de Nível de Obesidade com Machine Learning
 
-# 1. Contexto do Problema
+## 1. Contexto do Problema
 
 A obesidade é uma condição médica multifatorial que impacta diretamente a saúde da população.
 Este projeto foi desenvolvido com o objetivo de construir um modelo preditivo capaz de auxiliar a equipe médica na identificação do nível de obesidade de um paciente, com base em dados comportamentais, físicos e hábitos de vida.
 
 O sistema foi desenvolvido como parte do Tech Challenge da pós-graduação, integrando todas as etapas da pipeline de Machine Learning.
 
-# 2. Base de Dados
+## 2. Base de Dados
 
 Base utilizada: Obesity.csv
 
@@ -27,7 +27,7 @@ Meio de transporte
 
 Nível de obesidade (variável alvo)
 
-# 3. Feature Engineering
+## 3. Feature Engineering
 
 Foram realizadas as seguintes transformações:
 
@@ -47,7 +47,7 @@ Toda a transformação foi implementada utilizando Pipeline do Scikit-learn, gar
 
 A distribuição das classes mostrou-se relativamente balanceada, reduzindo risco de viés do modelo.
 
-# 4. Modelagem
+## 4. Modelagem
 
 Foram testados três algoritmos:
 
@@ -72,7 +72,7 @@ Matriz de Confusão
 
 Classification Report (Precision, Recall, F1-score)
 
-# 5. Aplicação Preditiva
+## 5. Aplicação Preditiva
 
 O modelo foi deployado utilizando Streamlit.
 
@@ -87,7 +87,7 @@ Previsão do nível de obesidade
 Acesse o app aqui:
 (https://tech-challenge-obesity-mpu2ixco4gqgl9t2qo73p5.streamlit.app/)
 
-# 6. Dashboard Analítico
+## 6. Dashboard Analítico
 
 Foi desenvolvido um painel analítico com foco em insights para decisão médica, incluindo:
 
@@ -105,7 +105,7 @@ Consumo de álcool × obesidade
 
 Acesse o dashboard aqui:
 
-# 7. Estrutura do Projeto
+## 7. Estrutura do Projeto
 tech-challenge-obesity/  
 │
 ├── data/  
@@ -118,7 +118,7 @@ tech-challenge-obesity/
 ├── dashboard.pbix  
 └── README.md  
 
-# 8. Vídeo de Apresentação
+## 8. Vídeo de Apresentação
 
 Link do vídeo explicando estratégia e resultados:
 
