@@ -63,9 +63,11 @@ Gradient Boosting
 | Random Forest        | 97.63%   |
 | Gradient Boosting ⭐ | **98.34%** |
 
-Gradient Boosting: ████████████████████ 98%
-Random Forest:     ██████████████████ 97%
-Logistic Regression: ████████████ 90%
+Gradient Boosting: ████████████████████ 98%  
+
+Random Forest:     ██████████████████ 97%  
+
+Logistic Regression: ████████████ 90%  
 
 O modelo escolhido foi Gradient Boosting, por apresentar melhor desempenho.
 
