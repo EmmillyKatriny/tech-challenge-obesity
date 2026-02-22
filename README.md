@@ -122,7 +122,7 @@ tech-challenge-obesity/
 
 Link do vídeo explicando estratégia e resultados:
 
-# 9. Conclusão
+## 9. Conclusão
 
 O modelo desenvolvido atingiu alta performance preditiva (>98% de acurácia), demonstrando forte capacidade de identificar padrões associados ao nível de obesidade.
 
