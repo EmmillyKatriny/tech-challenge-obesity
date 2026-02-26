@@ -99,7 +99,6 @@ Link do vídeo explicando estratégia e resultados:
 
 ![vídeo](Tech_Obesidade.mp4)
 
-
 ## 9. Conclusão
 
 O modelo preditivo desenvolvido apresentou alto desempenho, alcançando acurácia superior a 98%, demonstrando forte capacidade de identificar padrões associados aos diferentes níveis de obesidade.
