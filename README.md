@@ -36,10 +36,11 @@ Os resultados obtidos foram:
 | Random Forest        | 97.63%   |
 | Gradient Boosting   | **98.34%** |
 
-
 O modelo Gradient Boosting apresentou o melhor desempenho, superando significativamente o critério mínimo de 75% estabelecido pelo desafio.
 
 A matriz de confusão demonstrou que os poucos erros ocorreram principalmente entre classes adjacentes, o que é esperado devido à natureza progressiva dos níveis de obesidade.
+
+![Matriz de Confusão](matriz_de_confusão.png)
 
 ## 5. Aplicação Preditiva
 
