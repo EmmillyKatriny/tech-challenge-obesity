@@ -90,11 +90,15 @@ tech-challenge-obesity/
 ├── requirements.txt  
 ├── dashboard_tableau.png  
 ├── matriz_de_confusao.png  
+├── Tech_Obesidade.mp4. 
 └── README.md  
 
 ## 8. Vídeo de Apresentação
 
 Link do vídeo explicando estratégia e resultados:
+
+![vídeo](Tech_Obesidade.mp4)
+
 
 ## 9. Conclusão
 
