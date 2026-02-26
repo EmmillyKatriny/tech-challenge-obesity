@@ -4,106 +4,80 @@
 
 ## 1. Contexto do Problema
 
-A obesidade é uma condição médica multifatorial que impacta diretamente a saúde da população.
-Este projeto foi desenvolvido com o objetivo de construir um modelo preditivo capaz de auxiliar a equipe médica na identificação do nível de obesidade de um paciente, com base em dados comportamentais, físicos e hábitos de vida.
-
-O sistema foi desenvolvido como parte do Tech Challenge da pós-graduação, integrando todas as etapas da pipeline de Machine Learning.
+Neste projeto, foi desenvolvido um sistema preditivo de Machine Learning com o objetivo de auxiliar a equipe médica na identificação do nível de obesidade de pacientes, utilizando dados físicos e comportamentais.
+A obesidade é uma condição multifatorial que impacta diretamente a saúde pública, e a proposta do trabalho é oferecer suporte à tomada de decisão clínica por meio de análise preditiva e geração de insights analíticos.
 
 ## 2. Base de Dados
 
-Base utilizada: Obesity.csv
+Foi utilizada a base Obesity.csv, composta por 2.111 registros e 17 variáveis.
+Essas variáveis incluem dados físicos, como idade, peso e altura, além de hábitos alimentares, frequência de atividade física, tempo de uso de dispositivos tecnológicos e histórico familiar.
 
-Contém 2.111 registros e 17 variáveis, incluindo:
+A variável alvo representa o nível de obesidade, classificado em diferentes categorias.
 
-Dados físicos (Age, Height, Weight)
-
-Hábitos alimentares
-
-Atividade física
-
-Histórico familiar
-
-Meio de transporte
-
-Nível de obesidade (variável alvo)
+A distribuição das classes mostrou-se relativamente equilibrada, reduzindo risco de viés no treinamento do modelo e contribuindo para maior confiabilidade nos resultados.
 
 ## 3. Feature Engineering
 
-Foram realizadas as seguintes transformações:
+Durante a etapa de preparação, foi realizado o arredondamento das variáveis de escala e criada a variável IMC, um dos principais indicadores clínicos associados à obesidade.
 
-Arredondamento das variáveis de escala (FCVC, NCP, CH2O, FAF, TUE)
+Em seguida, foram separadas as variáveis numéricas e categóricas, e toda a transformação foi implementada dentro de uma pipeline de Machine Learning, utilizando StandardScaler (variáveis numéricas) e (variáveis categóricas)OneHotEncoder.
 
-Criação da variável IMC (BMI)
-
-Separação de variáveis numéricas e categóricas
-
-Aplicação de:
-
-StandardScaler (variáveis numéricas)
-
-OneHotEncoder (variáveis categóricas)
-
-Toda a transformação foi implementada utilizando Pipeline do Scikit-learn, garantindo ausência de vazamento de dados.
-
-A distribuição das classes mostrou-se relativamente balanceada, reduzindo risco de viés do modelo.
+Essa abordagem garante maior robustez ao modelo e evita vazamento de dados, uma vez que as transformações são aplicadas exclusivamente com base nos dados de treino.
 
 ## 4. Modelagem
 
-Foram testados três algoritmos:
+Foram testados três algoritmos de classificação: Regressão Logística, Random Forest e Gradient Boosting.
 
-Logistic Regression
-
-Random Forest
-
-Gradient Boosting
+Os resultados obtidos foram:
 
 | Modelo               | Accuracy |
 |----------------------|----------|
 | Logistic Regression  | 90.78%   |
 | Random Forest        | 97.63%   |
-| Gradient Boosting ⭐ | **98.34%** |
+| Gradient Boosting   | **98.34%** |
 
 
-O modelo escolhido foi Gradient Boosting, por apresentar melhor desempenho.
+O modelo Gradient Boosting apresentou o melhor desempenho, superando significativamente o critério mínimo de 75% estabelecido pelo desafio.
 
-Também foram avaliadas:
-
-Matriz de Confusão
-
-Classification Report (Precision, Recall, F1-score)
+A matriz de confusão demonstrou que os poucos erros ocorreram principalmente entre classes adjacentes, o que é esperado devido à natureza progressiva dos níveis de obesidade.
 
 ## 5. Aplicação Preditiva
 
-O modelo foi deployado utilizando Streamlit.
+Após a seleção do melhor modelo, foi realizado o deploy utilizando Streamlit.
 
-A aplicação permite:
+A aplicação permite inserir os dados do paciente, calcular automaticamente o IMC e gerar a previsão do nível de obesidade.
 
-Inserção dos dados do paciente
-
-Cálculo automático do IMC
-
-Previsão do nível de obesidade
+A ferramenta pode ser utilizada como apoio à triagem inicial, auxiliando profissionais de saúde na identificação de pacientes com maior risco, sem substituir o diagnóstico clínico.
 
 Acesse o app aqui:
 (https://tech-challenge-obesity-mpu2ixco4gqgl9t2qo73p5.streamlit.app/)
 
 ## 6. Dashboard Analítico
 
-Foi desenvolvido um painel analítico com foco em insights para decisão médica, incluindo:
+O painel analítico permite identificar padrões associados ao nível de obesidade. Observa-se que o histórico familiar está associado a maiores médias de peso nas categorias mais avançadas. Além disso, baixa atividade física e maior consumo de alimentos calóricos apresentam correlação com níveis elevados de obesidade.
 
-Distribuição dos níveis de obesidade
+### Prévia do Painel
 
-Relação IMC × obesidade
+![Dashboard Tableau](images/dashboard_tableau.png)
 
-Histórico familiar × obesidade
+Insight 1: Histórico Familiar × Peso
+Observa-se que pacientes com histórico familiar de excesso de peso apresentam médias de peso mais elevadas nas categorias de sobrepeso e obesidade.
+Esse comportamento reforça a influência de fatores genéticos e familiares no desenvolvimento da condição, indicando a importância de acompanhamento preventivo em indivíduos com predisposição.
 
-Atividade física × obesidade
+Insight 2: Consumo frequente de alimentos calóricos × Peso
+O consumo frequente de alimentos altamente calóricos está associado a maiores médias de peso nas categorias de obesidade.
+Esse padrão evidencia a relevância de hábitos alimentares no agravamento do quadro e reforça a necessidade de orientação nutricional como estratégia preventiva.
 
-Tempo de tela × obesidade
+Insight 3: Peso × Atividade Física
+A análise indica que menores níveis de atividade física estão relacionados a maiores médias de peso e maior concentração nas categorias de obesidade.
+Esse resultado destaca a importância da prática regular de exercícios físicos como fator de proteção.
 
-Consumo de álcool × obesidade
+Insight 4: Altura × Álcool × Peso
+Observa-se variação da média de peso associada à frequência de consumo de álcool, especialmente em indivíduos com determinadas faixas de altura.
+Embora o impacto seja menos expressivo que o IMC ou atividade física, o consumo frequente de álcool pode contribuir para o aumento do peso corporal.
 
 Acesse o dashboard aqui:
+https://public.tableau.com/views/Peso_17719774131180/Painel1?:language=pt-BR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ## 7. Estrutura do Projeto
 tech-challenge-obesity/  
@@ -124,6 +98,8 @@ Link do vídeo explicando estratégia e resultados:
 
 ## 9. Conclusão
 
-O modelo desenvolvido atingiu alta performance preditiva (>98% de acurácia), demonstrando forte capacidade de identificar padrões associados ao nível de obesidade.
+O modelo preditivo desenvolvido apresentou alto desempenho, alcançando acurácia superior a 98%, demonstrando forte capacidade de identificar padrões associados aos diferentes níveis de obesidade.
 
-A aplicação e o dashboard fornecem suporte visual e analítico para auxiliar a equipe médica na tomada de decisão.
+A integração entre modelagem preditiva e análise exploratória permite apoiar a equipe médica na identificação de perfis de risco e na tomada de decisão baseada em dados.
+
+Ressalta-se que a ferramenta atua como suporte adicional e não substitui avaliação clínica especializada.
