@@ -58,7 +58,7 @@ O painel analítico permite identificar padrões associados ao nível de obesida
 
 ### Prévia do Painel
 
-![Dashboard Tableau](images/dashboard_tableau.png)
+![Dashboard Tableau](dashboard_tableau.png)
 
 Insight 1: Histórico Familiar × Peso
 Observa-se que pacientes com histórico familiar de excesso de peso apresentam médias de peso mais elevadas nas categorias de sobrepeso e obesidade.
