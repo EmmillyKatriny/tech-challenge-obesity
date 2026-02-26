@@ -60,19 +60,19 @@ O painel analítico permite identificar padrões associados ao nível de obesida
 
 ![Dashboard Tableau](dashboard_tableau.png)
 
-Insight 1: Histórico Familiar × Peso  
+#### Insight 1: Histórico Familiar × Peso  
 Observa-se que pacientes com histórico familiar de excesso de peso apresentam médias de peso mais elevadas nas categorias de sobrepeso e obesidade.
 Esse comportamento reforça a influência de fatores genéticos e familiares no desenvolvimento da condição, indicando a importância de acompanhamento preventivo em indivíduos com predisposição.
 
-Insight 2: Consumo frequente de alimentos calóricos × Peso  
+### Insight 2: Consumo frequente de alimentos calóricos × Peso  
 O consumo frequente de alimentos altamente calóricos está associado a maiores médias de peso nas categorias de obesidade.
 Esse padrão evidencia a relevância de hábitos alimentares no agravamento do quadro e reforça a necessidade de orientação nutricional como estratégia preventiva.
 
-Insight 3: Peso × Atividade Física  
+### Insight 3: Peso × Atividade Física  
 A análise indica que menores níveis de atividade física estão relacionados a maiores médias de peso e maior concentração nas categorias de obesidade.
 Esse resultado destaca a importância da prática regular de exercícios físicos como fator de proteção.
 
-Insight 4: Altura × Álcool × Peso  
+### Insight 4: Altura × Álcool × Peso  
 Observa-se variação da média de peso associada à frequência de consumo de álcool, especialmente em indivíduos com determinadas faixas de altura.
 Embora o impacto seja menos expressivo que o IMC ou atividade física, o consumo frequente de álcool pode contribuir para o aumento do peso corporal.
 
