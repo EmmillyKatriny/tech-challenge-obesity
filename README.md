@@ -40,7 +40,7 @@ O modelo Gradient Boosting apresentou o melhor desempenho, superando significati
 
 A matriz de confusão demonstrou que os poucos erros ocorreram principalmente entre classes adjacentes, o que é esperado devido à natureza progressiva dos níveis de obesidade.
 
-![Matriz de Confusão](matriz_de_confusão.png)
+![Matriz de Confusão](matriz_de_confusao.png)
 
 ## 5. Aplicação Preditiva
 
