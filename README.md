@@ -83,14 +83,13 @@ https://public.tableau.com/views/Peso_17719774131180/Painel1?:language=pt-BR&:si
 ## 7. Estrutura do Projeto
 tech-challenge-obesity/  
 │
-├── data/  
-│   └── obesity.csv  
-│  
+├── Obesity.csv  
 ├── tech_challenge_obesity.ipynb  
 ├── app.py  
 ├── modelo_obesidade.pkl  
 ├── requirements.txt  
-├── dashboard.pbix  
+├── dashboard_tableau.png  
+├── matriz_de_confusao.png  
 └── README.md  
 
 ## 8. Vídeo de Apresentação
